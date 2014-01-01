@@ -42,8 +42,8 @@ module.exports =function(grunt){
       copy: {
         main: {
           expand: true,
-          cwd: 'site/',
-          src: 'images/*',
+          cwd: 'site/images',
+          src: '*',
           dest: 'build/img'
         },
       },

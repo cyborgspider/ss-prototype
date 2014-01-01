@@ -1,2 +1,82 @@
 body
-  font 16px/1.5 "Helvetica", "Arial", sans-serif
+  font    14px/1.5 "Signika", "Arial", sans-serif
+  margin  0
+  padding 0
+a
+  text-decoration none
+  &:hover
+    text-decoration underline
+#wrap
+  width  1020px
+  margin 0 auto
+.product-list
+  list-style none
+  margin     0
+  padding    0
+  text-align center
+  &>li
+    display       inline-block
+    text-align    center
+    margin-right  50px
+    margin-bottom 50px
+  
+nav
+  background #000
+  width      100%
+
+.nav-wrap
+    width    1020px
+    margin   0 auto
+    position relative
+
+.top-nav
+  text-align     center
+  font-size      12px
+  text-transform uppercase
+  padding 15px 0
+  &>a
+    color           #5b5b5b
+    text-decoration none
+    margin-right    10px
+    &:hover
+      text-decoration underline
+
+.logo
+  width       195px
+  height      145px
+  background  url(../img/ss-logo.png) no-repeat
+  display     block
+  text-indent -9999px
+  margin      0 auto 
+  position    relative
+  z-index     1
+
+.main-nav
+  position   relative
+  max-height 145px
+  transition max-height 0.4s ease-in-out
+  overflow   hidden
+  &.active
+    max-height 400px
+
+.main-nav-links
+  width   580px
+  padding 0 0 20px
+  margin  0 auto
+  &>a
+    display        block
+    color          white
+    text-transform uppercase
+    margin-bottom 10px
+    
+
+.nav-trigger
+  width         74px
+  height        74px
+  background    #000 url(../img/nav-trigger-arrow.png) no-repeat center 70%
+  border-radius 100%
+  position      absolute
+  bottom        -30px
+  left          50%
+  margin-left   -37px
+  cursor        pointer

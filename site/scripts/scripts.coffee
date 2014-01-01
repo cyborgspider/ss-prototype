@@ -1,1 +1,3 @@
-console.log 'Hello Sassysac Prototypes'
+$ ->
+  $('.nav-trigger').click ->
+      $('.main-nav').toggleClass 'active'
