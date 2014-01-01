@@ -3,7 +3,9 @@ html
   head
     link(href="http://fonts.googleapis.com/css?family=Signika:400,600,300", rel="stylesheet")
     link(href="css/styles.css", rel="stylesheet")
+    link(href="vendor/tooltip.css",rel="stylesheet")
     script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+    script(src="vendor/bootstrap.js")
     script(src="js/scripts.js")
   body
     nav
@@ -32,53 +34,65 @@ html
     #wrap
       ul.product-list
         li
-          img.product-img(src="img/yellow.jpg", alt="")
-          .price $35 | <span class="old-price">$48</span>
-          .description Diamond Stud Crossbody
-        li
           img.product-img(src="img/white-floral.jpg", alt="")
           .price $22 | <span class="old-price">$148</span>
           .description Ivory Floral
+          .favorite
         li
           img.product-img(src="img/pink-clutch.jpg", alt="")
           .price $135 | <span class="old-price">$148</span>
           .description Pink Clutch
+          .favorite
         li
           img.product-img(src="img/blue-tote.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Deep Blue
+          .favorite
+        li
+          img.product-img(src="img/yellow.jpg", alt="")
+          .price $35 | <span class="old-price">$48</span>
+          .description Diamond Stud Crossbody
+          .favorite.true            
         li
           img.product-img(src="img/black-bag.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Ebony Amazonian
+          .favorite
         li
           img.product-img(src="img/gray.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description The Gray
+          .favorite
         li
           img.product-img(src="img/beige-tote.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Don't I Look Good In Beige?
+          .favorite
         li
           img.product-img(src="img/black-tote.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Just Along for the Ride
+          .favorite.true
         li
           img.product-img(src="img/orange-tote.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Orange Tote
+          .favorite
         li
           img.product-img(src="img/natural.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Natural Color Bag Thing
+          .favorite
         li
           img.product-img(src="img/yellow-bag.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Los Angeles Lakers
+          .favorite
         li
           img.product-img(src="img/yellow-tote.jpg", alt="")
           .price $35 | <span class="old-price">$48</span>
           .description Indiana Pacers                    
+          .favorite
 
 
 

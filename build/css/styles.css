@@ -3,7 +3,8 @@ a{text-decoration:none;}
 a:hover{text-decoration:underline}
 #wrap{width:1020px;margin:0 auto}
 .product-list{list-style:none;margin:0;padding:0;text-align:center;}
-.product-list>li{display:inline-block;text-align:center;margin-right:50px;margin-bottom:50px}
+.product-list>li{display:inline-block;text-align:center;margin-right:20px;margin-bottom:40px;}
+.product-list>li:nth-child(4n){margin-right:0}
 nav{background:#000;width:100%}
 .nav-wrap{width:1020px;margin:0 auto;position:relative}
 .top-nav{text-align:center;font-size:12px;text-transform:uppercase;padding:15px 0;}
@@ -15,7 +16,12 @@ nav{background:#000;width:100%}
 .main-nav-wrap{width:580px;margin:0 auto}
 .main-nav-links{padding:0 0 20px;float:left;}
 .main-nav-links>a{display:block;color:#fff;text-transform:uppercase;margin-bottom:10px}
-.main-nav-hints{width:230px;height:230px;float:right;background:#fff}
+.main-nav-hints{width:230px;height:230px;float:right;background:#fff;text-align:center}
 .nav-trigger{width:74px;height:74px;background:#000;-webkit-border-radius:100%;border-radius:100%;position:absolute;bottom:-30px;left:50%;margin-left:-37px;cursor:pointer}
 .nav-trigger-arrow{height:14px;width:24px;background:url("../img/nav-trigger-arrow.png") no-repeat;position:absolute;top:60%;left:50%;margin-left:-12px;-webkit-transition:-webkit-transform 0.2s ease-in-out;-moz-transition:-moz-transform 0.2s ease-in-out;-o-transition:-o-transform 0.2s ease-in-out;-ms-transition:-ms-transform 0.2s ease-in-out;transition:transform 0.2s ease-in-out;}
 .nav-trigger-arrow.active{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.price{font-size:18px;letter-spacing:1px;margin-bottom:5px}
+.old-price{color:#989898;text-decoration:line-through}
+.description{text-transform:uppercase;margin-bottom:10px}
+.favorite{width:21px;height:22px;background:url("../img/icon-favorite.png");opacity:.1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";filter:alpha(opacity=10);-webkit-transition:opacity 0.2s;-moz-transition:opacity 0.2s;-o-transition:opacity 0.2s;-ms-transition:opacity 0.2s;transition:opacity 0.2s;cursor:pointer;text-align:center;display:inline-block;}
+.favorite:hover,.favorite.true{opacity:1;-ms-filter:none;filter:none}
