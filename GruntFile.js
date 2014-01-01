@@ -19,10 +19,6 @@ module.exports =function(grunt){
         html:{
           files:   ['site/*.jade'],
           tasks:   ['jade']
-        },
-        copy:{
-          files: ['site/images/*'],
-          tasks: ['copy']
         }
       },
       coffee:{
@@ -41,11 +37,11 @@ module.exports =function(grunt){
       },
       copy: {
         main: {
-          expand: true,
-          cwd: 'site/images',
-          src: '*',
-          dest: 'build/img'
-        },
+          files: [
+            {expand: true,cwd: 'site/images',src: '*',dest: 'build/img'},
+            {expand: true, cwd: 'site/vendor',src: '*',dest:'build/vendor'}
+          ]
+        }
       },
       stylus:{
         compile: {

@@ -17,8 +17,10 @@ a
   &>li
     display       inline-block
     text-align    center
-    margin-right  50px
-    margin-bottom 50px
+    margin-right  20px
+    margin-bottom 40px
+    &:nth-child(4n)
+      margin-right 0
   
 nav
   background #000
@@ -77,6 +79,7 @@ nav
     height     230px
     float      right
     background white
+    text-align center
 
 .nav-trigger
   width         74px
@@ -100,3 +103,25 @@ nav
   &.active
     transform rotate(180deg)
 
+.price
+  font-size      18px
+  letter-spacing 1px
+  margin-bottom  5px
+.old-price
+  color           #989898
+  text-decoration line-through
+.description
+  text-transform uppercase
+  margin-bottom  10px
+.favorite
+  width      21px
+  height     22px
+  background url(../img/icon-favorite.png)
+  opacity    0.1
+  transition opacity 0.2s 
+  cursor     pointer
+  text-align center
+  display    inline-block
+  &:hover
+  &.true
+    opacity 1
