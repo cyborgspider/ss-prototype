@@ -12,6 +12,10 @@ nav{background:#000;width:100%}
 .logo{width:195px;height:145px;background:url("../img/ss-logo.png") no-repeat;display:block;text-indent:-9999px;margin:0 auto;position:relative;z-index:1}
 .main-nav{position:relative;max-height:145px;-webkit-transition:max-height 0.4s ease-in-out;-moz-transition:max-height 0.4s ease-in-out;-o-transition:max-height 0.4s ease-in-out;-ms-transition:max-height 0.4s ease-in-out;transition:max-height 0.4s ease-in-out;overflow:hidden;}
 .main-nav.active{max-height:400px}
-.main-nav-links{width:580px;padding:0 0 20px;margin:0 auto;}
+.main-nav-wrap{width:580px;margin:0 auto}
+.main-nav-links{padding:0 0 20px;float:left;}
 .main-nav-links>a{display:block;color:#fff;text-transform:uppercase;margin-bottom:10px}
-.nav-trigger{width:74px;height:74px;background:#000 url("../img/nav-trigger-arrow.png") no-repeat center 70%;-webkit-border-radius:100%;border-radius:100%;position:absolute;bottom:-30px;left:50%;margin-left:-37px;cursor:pointer}
+.main-nav-hints{width:230px;height:230px;float:right;background:#fff}
+.nav-trigger{width:74px;height:74px;background:#000;-webkit-border-radius:100%;border-radius:100%;position:absolute;bottom:-30px;left:50%;margin-left:-37px;cursor:pointer}
+.nav-trigger-arrow{height:14px;width:24px;background:url("../img/nav-trigger-arrow.png") no-repeat;position:absolute;top:60%;left:50%;margin-left:-12px;-webkit-transition:-webkit-transform 0.2s ease-in-out;-moz-transition:-moz-transform 0.2s ease-in-out;-o-transition:-o-transform 0.2s ease-in-out;-ms-transition:-ms-transform 0.2s ease-in-out;transition:transform 0.2s ease-in-out;}
+.nav-trigger-arrow.active{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
